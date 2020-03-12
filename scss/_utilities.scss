@@ -26,6 +26,14 @@
     margin-bottom: 1rem;
 }
 
+.front-lead {
+    font-size: 1.5rem;
+}
+
+.note {
+    margin-bottom: 1rem;
+}
+
 .text-primary {
     color: $primary-color;
 }
@@ -128,3 +136,38 @@
     left: 0;
     background-color:rgba(0, 0, 0, 0.6);
 }
+
+.table {
+    border: solid 1px $primary-color;
+
+    th, td {
+        padding: .7rem;
+        text-align: right;
+        width: 100px;
+    }
+
+    th {
+        background: $light-color;
+    }
+
+    .lift-hdr {
+        text-align: left;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    text-align: center;
+    background: $primary-color;
+    color: $light-color;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
