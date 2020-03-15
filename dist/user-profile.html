@@ -22,12 +22,45 @@
     </nav>
 
     <section class="container">
-      <h1 class="large text-primary">Create Your Profile???</h1>
+      <h1 class="large text-primary">Edit Your  Lifting Profile</h1>
       <a href="dashboard.html" class="btn">Back To Dashboard</a>
-      Should this allow you to enter your body weight for tracking?
-      Enter lifts here? or separate in the lift form with calculation?
-      Choose a start day and a 531 BBB scheme either a or b?
-      Then when you click on daily routine it can automatically detect that its say thursday so day 4 and go from there?
+      <br />
+      <br />
+      <small>* = required field</small>
+      <form class="form">
+        <div class="form-group">
+          <select name="status">
+            <option value="0">* Select the program style you want to follow</option>
+            <option value="Developer">Style A (same lifts for 531 and 5x10)</option>
+            <option value="Junior Developer">Style B (differents lifts for 531 and 5x10)</option>
+          </select>
+          <small class="form-text"
+            >Select which programming you want to follow style B has more variation</small
+          >
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="* Bench" name="company" required/>
+          <small class="form-text">Enter your one rep max for the bench press</small>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="* Overhead Press" name="company" required />
+          <small class="form-text">Enter your one rep max for the overhead press</small>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="* Squat" name="company" required/>
+          <small class="form-text">Enter your one rep max for the squat</small>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="* Deadlift" name="company" required/>
+          <small class="form-text">Enter your one rep max for the deadlift</small>
+        </div>
+
+          <input type="text" placeholder="Body Weight" name="weight" />
+          <small class="form-text">Enter your weight if you want to track it (in Lbs)</small>
+        </div>
+        <input type="submit" class="btn btn-primary my-1" />
+        <a class="btn btn-light my-1" href="dashboard.html">Go Back</a>
+      </form>
     </section>
   </body>
 </html>
