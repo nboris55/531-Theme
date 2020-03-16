@@ -140,6 +140,18 @@
 .table {
   border: solid 1px $primary-color;
 
+  &.table-daily {
+    th {
+      background: none;
+    }
+
+    border: none;
+  }
+
+  th {
+    background: $light-color;
+  }
+
   th,
   td {
     padding: 0.7rem;
@@ -147,26 +159,9 @@
     width: 100px;
   }
 
-  th {
-    background: $light-color;
-  }
-
   .lift-hdr {
     text-align: left;
   }
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 20%;
-  text-align: center;
-  background: $primary-color;
-  color: $light-color;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -175,8 +170,21 @@
 
 h4.pointer {
   cursor: pointer;
+  background: $primary-color;
+  padding: 10px;
+  color: #fff;
+
+  &:hover {
+    background: lighten($primary-color, 5%);
+  }
 }
 
 input[type='checkbox'] {
   cursor: pointer;
+}
+
+.card {
+  padding: 0px 0px 10px 5px;
+  width: 40%;
+  border: solid 1px $primary-color;
 }

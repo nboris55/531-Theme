@@ -1,5 +1,13 @@
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .navbar {
     display: none;
+  }
+
+  table {
+    width: 95%;
+  }
+  input[type='text'],
+  textarea {
+    width: 75%;
   }
 }
